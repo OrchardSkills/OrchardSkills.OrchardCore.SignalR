@@ -1227,17 +1227,13 @@
           }
         },
         {
-          "ContentItemId": "4x5566b30knfy1nynqxt1pd65r",
-          "ContentItemVersionId": "4b1xe9fr201kr2b40k8fgmp2ce",
+          "ContentItemId": "[js: uuid()]",
           "ContentType": "Page",
           "DisplayText": "Chat",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-03-04T18:09:24.8421204Z",
-          "PublishedUtc": "2020-03-04T18:09:24.8575022Z",
-          "CreatedUtc": "2020-03-04T17:17:57.8858982Z",
-          "Owner": "admin",
-          "Author": "admin",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
           "Page": {},
           "AutoroutePart": {
             "Path": "chat",
@@ -1252,7 +1248,6 @@
                 "DisplayText": null,
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-03-04T18:09:24.8481924Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
