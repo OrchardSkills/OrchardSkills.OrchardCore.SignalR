@@ -1227,24 +1227,47 @@
           }
         },
         {
-          "ContentItemId": "[js: uuid()]",
-          "ContentType": "Article",
+          "ContentItemId": "4x5566b30knfy1nynqxt1pd65r",
+          "ContentItemVersionId": "4b1xe9fr201kr2b40k8fgmp2ce",
+          "ContentType": "Page",
           "DisplayText": "Chat",
           "Latest": true,
           "Published": true,
-          "Owner": "[js: parameters('AdminUsername')]",
-          "Author": "[js: parameters('AdminUsername')]",
-          "Article": {
-            "Subtitle": {
-              "Text": "Chat with your Friends"
-            }
-          },
+          "ModifiedUtc": "2020-03-04T18:09:24.8421204Z",
+          "PublishedUtc": "2020-03-04T18:09:24.8575022Z",
+          "CreatedUtc": "2020-03-04T17:17:57.8858982Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Page": {},
           "AutoroutePart": {
             "Path": "chat",
             "SetHomepage": false
           },
-          "HtmlBodyPart": {
-            "Html": "    <div class=\"container\">\r\n        <div class=\"row\">&nbsp;</div>\r\n        <div class=\"row\">\r\n            <div class=\"col-2\">User</div>\r\n            <div class=\"col-4\"><input type=\"text\" id=\"userInput\"></div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-2\">Message</div>\r\n            <div class=\"col-4\"><input type=\"text\" id=\"messageInput\"></div>\r\n        </div>\r\n        <div class=\"row\">&nbsp;</div>\r\n        <div class=\"row\">\r\n            <div class=\"col-6\">\r\n                <input type=\"button\" id=\"sendButton\" value=\"Send Message\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-12\">\r\n            <hr>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-6\">\r\n            <ul id=\"messagesList\"></ul>\r\n        </div>\r\n    </div>\r\n<script src=\"TheCleanBlogTheme/js/signalr.js\"></script>\r\n<script src=\"TheCleanBlogTheme/js/chat.js\"></script>"
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "4j72y8chjfdg93y6ejm9zr6dnx",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-03-04T18:09:24.8481924Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<style>\r\n.shadow {\r\nwidth: 100%;\r\n-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);\r\n-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);\r\nbox-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);\r\n}\r\n.page-header {\r\n\tbackground: #006A4E;\r\n\tmargin: 0;\r\n  padding: 20px 0 10px;\r\n\tcolor: #FFFFFF;\r\n\t\r\n\twidth: 100%;\r\n  z-index: 1\r\n}\r\n.main {\r\n\twidth: 100%;\r\nbackground: #E5DDD5 url(\"https://www.toptal.com/designers/subtlepatterns/patterns/sports.png\") fixed;\r\n}\r\n\r\n.chat-log {\r\n\tpadding: 40px 0 114px;\r\n\theight: auto;\r\n\toverflow: auto;\r\n}\r\n.chat-log__item {\r\n        list-style: none;\r\n\tbackground: #fafafa;\r\n\tpadding: 10px;\r\n\tmargin: 0 auto 20px;\r\n\tmax-width: 80%;\r\n\tfloat: left;\r\n\tborder-radius: 4px;\r\n\tbox-shadow: 0 1px 2px rgba(0,0,0,.1);\r\n\tclear: both;\r\n}\r\n\r\n.chat-log__item.chat-log__item--own {\r\n\tfloat: right;\r\n\tbackground: #DCF8C6;\r\n\ttext-align: right;\r\n}\r\n\r\n.chat-form {\r\n\tbackground: #DDDDDD;\r\n\tpadding: 40px 0;\r\n\t\r\n\tbottom: 0;\r\n\twidth: 100%;\r\n}\r\n\r\n.chat-log__author {\r\n\tmargin: 0 auto .5em;\r\n\tfont-size: 14px;\r\n\tfont-weight: bold;\r\n}\r\n</style>\r\n<div class=\"shadow\">\r\n<header class=\"page-header\">\r\n  <div class=\"container \">\r\n    <h2>Chat with your friends</h2>\r\n  </div>\r\n</header>\r\n<div class=\"main\">\r\n  <div class=\"container \">\r\n    <div class=\"chat-log\">\r\n<ul id=\"messagesList\"></ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"chat-form\">\r\n    <div class=\"container \">\r\n      <form class=\"form-horizontal\">\r\n        <div class=\"row\">\r\n          <div class=\"col-sm-10 col-xs-8\">\r\n            <input type=\"text\" class=\"form-control\" id=\"userInput\" placeholder=\"User\" />\r\n            <input type=\"text\" class=\"form-control\" id=\"messageInput\" placeholder=\"Message\" />\r\n          </div>\r\n          <div class=\"col-sm-2 col-xs-4\">\r\n            <button type=\"submit\" id=\"sendButton\" class=\"btn btn-success btn-block\">Send</button>\r\n          </div>\r\n        </div>\r\n      </form>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n<script src=\"TheCleanBlogTheme/js/signalr.js\"></script>\r\n<script src=\"TheCleanBlogTheme/js/chat.js\"></script>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
           },
           "TitlePart": {
             "Title": "Chat"

@@ -7,9 +7,21 @@ document.getElementById("sendButton").disabled = true;
 
 connection.on("ReceiveMessage", function (user, message) {
     var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    var encodedMsg = user + " says " + msg;
+
+
+    var h3 = document.createElement("h3");
+    h3.classList.add("chat-log__author");
+    h3.textContent = user + " says ";
+
+    var div = document.createElement("div");
+    div.classList.add("chat-log__message")
+    var encodedMsg = msg;
+    div.textContent = encodedMsg
+
     var li = document.createElement("li");
-    li.textContent = encodedMsg;
+    li.classList.add("chat-log__item")
+    li.appendChild(h3)
+    li.appendChild(div)
     document.getElementById("messagesList").appendChild(li);
 });
 
